@@ -1,13 +1,16 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { MainAppComponent } from './main-app/main-app.component';
+import { Component, Renderer2 } from '@angular/core';
+import { NavigationEnd, Router, RouterOutlet } from '@angular/router';
+import { WebLoginComponent } from './web-login/web-login.component';
+import { headerComponent } from './header/header.component';
+
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,MainAppComponent],
+  imports: [RouterOutlet,WebLoginComponent,headerComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
+
 export class AppComponent {
-  title = 'my-project';
+
 }

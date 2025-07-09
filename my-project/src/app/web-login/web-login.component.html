@@ -1,0 +1,33 @@
+
+<div class="my-background-div">
+  <div class="wrapper">
+    <h1 >Login</h1>
+    <form  (ngSubmit)="onSubmit()">
+      <div>
+     <div class="input-box">
+  <i class="bi bi-telephone-fill me-2"></i>
+  <input type="text" placeholder="Mobile Number" />
+</div>
+
+<div class="input-box">
+  <i class="bi bi-lock-fill me-2"></i>
+  <input type="text" placeholder="Mobile Number" />
+  <i class="bi bi-eye-slash"></i>
+</div>
+<div class="remember-forget">
+  <label class="mb-0">
+    <input type="checkbox" formControlName="rememberMe" /> Remember me
+  </label>
+  <a href="#">Forget Password</a>
+</div>
+    
+
+      <button class="btn" type="submit" >Submit</button>
+
+      <div class ="signup-link"> <a href="/signup">Don't have an Account?</a></div>
+     
+      </div>
+    </form>
+  </div>
+</div>
+

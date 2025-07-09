@@ -1,0 +1,99 @@
+ .my-background-div {
+  background-image: url('../../assets/img/image1.png');
+  background-size: cover;       /* Make image cover the whole div */
+  background-repeat: no-repeat; /* Prevent repeating */
+  background-position: center;  /* Center the image */
+  height: 100vh;                /* Full viewport height */
+  width: 100%;                  /* Full width */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;    
+
+         /* Optional text color */
+}
+.wrapper {
+       align-items:center;
+  background: rgba(255, 255, 255, 0.1); /* White with transparency */
+  border-radius: 10px;
+  padding: 30px;
+  width: 620px;
+  height: 550px;
+  box-shadow: 0 8px 32px 0 rgba(20, 241, 212, 0.37);
+  backdrop-filter: blur(10px); /* Glass effect */
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: black;
+   justify-content: center;
+}
+.input-box {
+  background-color: bisque;
+  border: 1px solid #ccc;
+  border-radius: 27px; /* Makes it rounded */
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.input-box input {
+  border: none;
+  outline: none;
+  background: transparent;
+  flex: 1;
+  border-radius: 37px;
+  padding: 8px;
+}
+.input-box input ::placholder{
+       color:white
+}
+.input-box i {
+  font-size: 2.2rem;
+  color: #555;
+  cursor: pointer;
+}
+/* Button style */
+.btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #003366;
+  border: none;
+  color: white;
+  border-radius: 27px;
+  cursor: pointer;
+}
+.wrapper h1{
+       text-align: center;
+       font-size: 36px;
+}
+
+.remember-forget {
+  display: flex;
+  justify-content: space-between; /* Pushes left and right */
+  align-items: center;
+  margin: 10px 0;
+  font-size: 14px;
+  
+  
+}
+.remember-forget a  {
+       display: inline-block;
+  border-bottom: 1px solid black; /* Blue line under link */
+  padding-bottom: 2px;
+  color: black;
+  text-decoration: none;
+       
+}
+
+.signup-link a {
+       display: inline-block;
+  border-bottom: 1px solid black; /* Blue line under link */
+  padding-bottom: 2px;
+  color: black;
+  text-decoration: none;
+       
+}
+.remember-forget a && .signup-link a:hover {
+  text-decoration: none;
+  border-color: #0a58ca; /* darker on hover */
+}

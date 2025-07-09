@@ -1,15 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MainAppModule } from './main-app/main-app.module';
+
 import { AppComponent } from './app.component';
-import { MainAppComponent } from './main-app/main-app.component';
+
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { TranslateModule } from '@ngx-translate/core';
+import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 
 
 
 @NgModule({
-  declarations: [AppComponent,MainAppComponent],
+  declarations: [AppComponent],
   imports: [
-    CommonModule,MainAppModule
+    CommonModule,TranslateModule,CommonModule, RouterOutlet, RouterLink, RouterLinkActive, ReactiveFormsModule
   ],
   bootstrap:[AppComponent]
 })
