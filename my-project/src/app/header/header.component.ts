@@ -1,12 +1,13 @@
 import { Component, Renderer2 } from '@angular/core';
 import { createLinkedSignal } from '@angular/core/primitives/signals';
 import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 import {  TranslateService } from '@ngx-translate/core';
 
 
 @Component({
   selector: 'app-header',
-  imports: [headerComponent,  FormsModule
+  imports: [headerComponent,  FormsModule,RouterModule
    ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'

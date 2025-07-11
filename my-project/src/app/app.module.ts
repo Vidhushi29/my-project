@@ -5,14 +5,14 @@ import { AppComponent } from './app.component';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
-import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
+import { RouterLink, RouterLinkActive, RouterModule, RouterOutlet } from '@angular/router';
 
 
 
 @NgModule({
   declarations: [AppComponent],
   imports: [
-    CommonModule,TranslateModule,CommonModule, RouterOutlet, RouterLink, RouterLinkActive, ReactiveFormsModule
+    CommonModule,TranslateModule,CommonModule, RouterOutlet, RouterLink, RouterLinkActive, ReactiveFormsModule,RouterModule 
   ],
   bootstrap:[AppComponent]
 })

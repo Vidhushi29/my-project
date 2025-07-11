@@ -1,16 +1,18 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-web-login',
-  imports: [CommonModule],
+  imports: [CommonModule,RouterModule],
   templateUrl: './web-login.component.html',
   styleUrl: './web-login.component.css'
 })
 export class WebLoginComponent {
 loginForm: FormGroup;
-
+@Input() isSignup = true;
+  showPassword: boolean=false;
   constructor(private fb: FormBuilder) {
     this.loginForm = this.fb.group({
       mobile: ['', [Validators.required, Validators.pattern('^[0-9]{10}$')]],
@@ -25,4 +27,7 @@ loginForm: FormGroup;
       // handle login
     }
   }
+  togglePassword() {
+  this.showPassword = !this.showPassword;
+}
 }

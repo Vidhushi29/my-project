@@ -1,26 +1,25 @@
-
 <header class="header">
     <div class="logo-container">
         <img src="../../assets/img/image.png" alt="Logo" class="logo" />
         <nav class="nav"><a routerLink="/home" routerLinkActive="active">Home</a>
-            <a routerLink="/about" routerLinkActive="active">About</a>
+            <a routerLink="/book-appointment" routerLinkActive="active"></a>
             <a routerLink="/contact" routerLinkActive="active">Contact</a>
         </nav>
-        
+
     </div>
     <nav class="nav right-nav">
 
 
-        <a routerLink="/home" routerLinkActive="active">Home</a>
-        <label class="switch" >
-  <input type="checkbox" [(ngModel)]="isEnglish" (change)= "onLanguageToggle()">
-  <span class="slider round">
-    <span class="toggle-text">{{ isEnglish ? 'en' : 'हि ' }}</span>
-  </span>
-</label>
-       <a routerLink="/signup" routerLinkActive="active" class="btn btn-primary">Sign Up</a>
-<a routerLink="/login" routerLinkActive="active" class="btn btn-primary">Log In</a>
+        <a routerLink="/feedback" routerLinkActive="active">Review</a>
+        <label class="switch">
+            <input type="checkbox" [(ngModel)]="isEnglish" (change)="onLanguageToggle()">
+            <span class="slider round">
+                <span class="toggle-text">{{ isEnglish ? 'en' : 'हि ' }}</span>
+            </span>
+        </label>
+        <a routerLink="/signup" routerLinkActive="active" class="btn btn-primary">Sign Up</a>
+        <a routerLink="/login" routerLinkActive="active" class="btn btn-primary">Log In</a>
 
-       
+
     </nav>
 </header>
