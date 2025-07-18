@@ -1,6 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
-.body{
-    --primary--begi-color:black
-    --
-    
+:root {
+  --headerHeight: 110px;
+  --sidebarWidth: 315px;
+  --headerTopLine: 10px;
 }
+body, html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+body {
+  z-index: 1000;
+  animation: slideDown 0.4s ease-out;
+
+ 
+     font-family: 'Open Sans', sans-serif;
+  font-size:15px;   
+     
+}
+
+

@@ -1,0 +1,160 @@
+/* .site-footer {
+  background-color: #2B354B;
+  color: #fff;
+  padding: 20px 10px;
+  width: 100%;
+  font-size: 14px;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-links {
+  margin-top: 10px;
+}
+
+.footer-links a {
+  color: #ccc;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #fff;
+} */
+.container{
+  background-color: #1e2a3a;
+width: 100%;
+max-width: 100%;
+box-sizing: border-box;
+}
+.top-bar {
+  background-color: #999; /* 👈 Same as previous body color */
+  font-size: 14px;
+  min-height: 100px;
+  color: #fff;
+}
+
+.footer-section {
+    
+  background-color: #1e2a3a; /* 👈 Dark footer */
+  color: #fff;
+ /* Optional: top border with Bootstrap info color */
+}
+.footer-logo {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+
+
+.footer-section ul li {
+  padding: 2px 0;
+  cursor: pointer;
+}
+
+.footer-section a {
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+.img-fluid{
+  height:100px
+}
+/* .footer-heading {
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 10px;
+  position: relative;
+    text-align: justify;
+} */
+
+/* Line under heading */
+/* .footer-heading.with-line::after {
+  content: '';
+  display: block;
+  
+  height: 3px;
+  background: linear-gradient(0deg, white, blue 80%) no-repeat;
+
+  margin-top: 6px;
+ 
+} */
+ .footer-heading {
+font-size: 18px;
+  color: #fff;
+  margin-bottom: 10px;
+  position: relative;
+    text-align: justify;
+}
+
+.underline {
+  display: flex;
+  align-items: center;
+  margin-top: 6px; /* spacing between heading and underline */
+  height: 4px;
+}
+
+.underline-blue {
+  width: 30px;
+  height: 4px;
+  background-color: #00d4ff; /* cyan-blue */
+  border-radius: 2px;
+}
+
+
+
+.underline-grey {
+  flex: 1;
+  height: 2px;
+  margin-left: 6px;
+  background-color: #4d5b6b; /* soft grey */
+  border-radius: 1px;
+}
+/* Fade-in Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeInUp 1s ease forwards;
+  opacity: 0; /* Initial state before animation */
+}
+
+.delay-1s {
+  animation-delay: 1s;
+}
+.clinic-description {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  margin: 0;
+  padding-bottom: 12px;
+  color: #ccc; 
+  text-align: justify;
+  line-height: 1.6;
+}
+.list-unstyled small{
+  text-align: justify;
+   
+}
+li{
+ 
+  text-align:justify;
+    padding: 12px 0px 11px;
+    font-size: 14px;
+    cursor: pointer;
+    font-family: "Times New Roman", Times, serif;
+}

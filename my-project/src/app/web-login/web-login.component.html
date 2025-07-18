@@ -1,44 +1,29 @@
 <div class="my-background-div">
   <div class="wrapper">
-    <h1>{{ isSignup ? 'Sign Up' : 'Login' }}</h1>
+    <h1>Login</h1>
+    <form (ngSubmit)="onSubmit()">
+      <div>
+        <div class="input-box">
+          <i class="bi bi-telephone-fill me-2"></i>
+          <input type="number" placeholder="Mobile Number" />
+        </div>
 
-    <form  (ngSubmit)="onSubmit()">
-      <div class="input-box" *ngIf="isSignup">
-        <i class="bi bi-person-fill me-2"></i>
-        <input type="text" placeholder="Full Name" formControlName="fullName" />
-      </div>
+        <div class="input-box">
+          <i class="bi bi-lock-fill me-2"></i>
+          <input type="text" placeholder="Enter Password" />
+        </div>
 
-      <div class="input-box">
-        <i class="bi bi-telephone-fill me-2"></i>
-        <input type="number" placeholder="Mobile Number" formControlName="mobile" />
-      </div>
+        <div class="form-options">
+          <label class="remember-me">
+            <input type="checkbox" /> Remember me
+          </label>
 
-      <div class="input-box">
-        <i class="bi bi-lock-fill me-2"></i>
-        <input [type]="showPassword ? 'text' : 'password'" placeholder="Password" formControlName="password" />
-        <i class="bi" [ngClass]="showPassword ? 'bi-eye' : 'bi-eye-slash'" (click)="togglePassword()"></i>
-      </div>
-
-      <div class="input-box" *ngIf="isSignup">
-        <i class="bi bi-lock-fill me-2"></i>
-        <input [type]="showPassword ? 'text' : 'password'" placeholder="Confirm Password" formControlName="confirmPassword" />
-      </div>
-
-      <div class="remember-forget" *ngIf="!isSignup">
-        <label>
-          <input type="checkbox" formControlName="rememberMe" /> Remember me
-        </label>
-        <a href="#">Forgot Password?</a>
-      </div>
-
-      <div class="submit-btn">
-        <button type="submit" class="btn">{{ isSignup ? 'Sign Up' : 'Login' }}</button>
-      </div>
-
-      <div class="signup-link">
-        <a [routerLink]="isSignup ? '/signup' : '/login'">
-          {{ isSignup ? 'Already have an account? Login' : "Don't have an account? Sign Up" }}
-        </a>
+          <a href="#" class="forgot-password">Forget Password?</a>
+        </div>
+        <div class="form-actions">
+          <button type="submit" class="btn btn-submit">Submit</button>
+          <a href="/signup" class="signup-link">Don't have an Account?</a>
+        </div>
       </div>
     </form>
   </div>

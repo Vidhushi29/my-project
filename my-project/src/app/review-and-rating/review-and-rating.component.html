@@ -1,1 +1,36 @@
+<div class="container rating-container mt-4">
+  <!-- Rating Stars Row -->
+  <div class="row mb-3">
+    <div class="col-12 rating-stars">
+      <i
+        *ngFor="let star of stars; let i = index"
+        class="bi fs-4 me-1"
+        [ngClass]="{
+          'bi-star-fill': i < rating,
+          'bi-star': i >= rating,
+          active: i < rating
+        }"
+        (click)="setRating(i + 1)"
+      ></i>
+    </div>
+  </div>
 
+  <!-- Feedback Textarea Row -->
+  <div class="row mb-3">
+    <div class="col-12">
+      <textarea
+        class="form-control"
+        formControlName="feedback"
+        placeholder="Write your feedback here..."
+        rows="4"
+      ></textarea>
+    </div>
+  </div>
+
+  <!-- Submit Button Row -->
+  <div class="row">
+    <div class="col-12">
+      <button class="btn btn-primary w-100" (click)="submitReview()">Submit</button>
+    </div>
+  </div>
+</div>

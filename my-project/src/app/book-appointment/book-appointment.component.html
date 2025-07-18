@@ -1,1 +1,42 @@
-<p>book-appointment works!</p>
+<div class="my-background-div">
+<div *ngIf="showPopup" class="wrapper position-relative">
+  <button type="button" class="close-btn" (click)="closeDiv()">&times;</button>
+
+  <form (ngSubmit)="onSubmit()">
+    <h1>Booking Appointment</h1>
+
+    <div class="input-box">
+      <i class="bi bi-person-fill me-2"></i>
+      <input type="text" placeholder="Enter name" />
+    </div>
+
+    <div class="input-box">
+      <input
+        type="date"
+        id="date"
+        formControlName="appointmentDate"
+        placeholder="Select the Date"
+        class="form-control"
+      />
+    </div>
+
+    <div class="input-box">
+      <input
+        type="time"
+        id="time"
+        formControlName="appointmentTime"
+        class="form-control"
+        value="00:00"
+      />
+    </div>
+
+    <div class="btn">
+      <button type="submit" class="btn btn-primary">Book Appointment</button>
+    </div>
+  </form>
+</div>
+
+
+
+
+</div>
