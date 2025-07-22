@@ -47,7 +47,17 @@
         <nav class="nav-menu">
           
           <a routerLink="/home" routerLinkActive="active"  class="active">HOME</a>
-            <a routerLink="/about" routerLinkActive="active"> ABOUT US</a>
+      <div class="nav-item dropdown" routerLinkActive="active">
+  <a class="nav-link dropdown-toggle" routerLink="/about" role="button">
+    ABOUT US
+  </a>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" routerLink="/about/who-are-you">Who are You?</a>
+    <a class="dropdown-item" routerLink="/about/clinic-tour">Clinic Tour</a>
+    <a class="dropdown-item" routerLink="/about/our-team">Our Team</a>
+    <a class="dropdown-item" routerLink="/about/dental-tourism-india">Dental Tourism India</a>
+  </div>
+</div>
             <a routerLink="/treatments" routerLinkActive="active">TREATMENTS</a>
             <a routerLink="/book-appointment" routerLinkActive="active">MAKE AN APPOINTMENT</a>
             <a routerLink="/warrenties" routerLinkActive="active">WARRANTIES</a>

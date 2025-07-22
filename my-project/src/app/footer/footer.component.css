@@ -52,10 +52,7 @@ box-sizing: border-box;
 
 
 
-.footer-section ul li {
-  padding: 2px 0;
-  cursor: pointer;
-}
+
 
 .footer-section a {
   text-decoration: none;
@@ -103,9 +100,9 @@ font-size: 18px;
 
 .underline-blue {
   width: 30px;
-  height: 4px;
+  height: 2px;
   background-color: #00d4ff; /* cyan-blue */
-  border-radius: 2px;
+
 }
 
 
@@ -115,7 +112,7 @@ font-size: 18px;
   height: 2px;
   margin-left: 6px;
   background-color: #4d5b6b; /* soft grey */
-  border-radius: 1px;
+
 }
 /* Fade-in Animation */
 @keyframes fadeInUp {
@@ -146,15 +143,48 @@ font-size: 18px;
   text-align: justify;
   line-height: 1.6;
 }
-.list-unstyled small{
+.list-unstyled {
   text-align: justify;
    
 }
-li{
- 
-  text-align:justify;
-    padding: 12px 0px 11px;
-    font-size: 14px;
+
+.treatment-list {
+    list-style: none;
+    font-size: 15px;
+    color: #ffffffcc;
+    padding: 0;
+    margin: 0;
+  }
+
+  .treatment-list li {
+    padding: 12px 0 11px;
+    text-align: justify;
     cursor: pointer;
-    font-family: "Times New Roman", Times, serif;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* subtle underline */
+  }
+  .treatment-list li:hover{
+     color: #00d4ff
+  }
+  .treatment-list li:last-child {
+    border-bottom: none;
+  }
+  .btn{
+    margin:0px 0px 12px;
+    padding: 6px 18px
+  }
+.fw-bold{
+      text-align: justify;
+    padding: 12px 0px 11px;
+    margin: 0px 0px 0px 0px;
+}
+.contact{
+    text-align: justify;
+    padding: 0px 0px 12px;
+    margin: 0px 0px 0px 0px;
+    font-size:13px;
+    font-family: 'Open Sans';
+    color:white
+}
+.d-flex :hover{
+ color:#00d4ff
 }
